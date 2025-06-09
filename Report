@@ -1,0 +1,43 @@
+Project 2: Report
+Crystal Diaz
+
+Intro:
+The purpose of this web app is to assist users in finding alternative fueling stations in their respective areas. 
+I was looking through API's and I found one on data.gov that interested me enough to make me want to research what alternatiev fuel is and who needs it.
+I was surprised to find ELEC (electric fuel for electric cars), was pretty scarce in my area (Miami, FL). 
+With the rise of electirc vehicles in a place like Miami, it would be useful for users to have info on where to immediately fuel up.
+
+Usability Goals:
+I wanted to build something useful, but also seamless. Search queries need to be straight forward and functional for users to navigate through. 
+It was important to have the search input screen on its own and have the user navigate to another page after searching.
+Furthermore, it was important for users to be able to store their search results somehow, so the email/ text function provided users with that ability.
+I chose to give users the option to see their results in a map view or a table, different people prefer different visualization of information.
+Below either option would be a list of their search results.
+
+Design Process & Widgets:
+Originally, when building the app, I had all my components on one page. I felt it was too busy and there needed to be a flow implemented. 
+I decided to separate sections into Search, Results, and Send Results to simplify the UI for the user.
+The first thing I sketched was the search bar, and it was on its own, so I am satisfied that my vision in the beginning made it to the end.
+The rest of the elements I added were to meet the demand of the assignment, but I also was mindful in picking elements that made sense to the purpose of the app.
+st.button was essential to the navigation of my app. Figuring out how to go forward and back to the start was tricky given streamlits limitations but it was not impossible.
+I still feel there is a bit of lag when clicking a button, and I would love to know how to fix it.
+st.map and st.chart worked together with st.checkbox, giving users the power to manipulate how they view their search results. 
+I had a difficult time adding a chart element. I picked a barchart because it made sense for the information users were viewing, but I feel it would be more useful if the bar chart could 
+save previous search results to show users over time what fuel types are available over others.
+Currently it only displays the prevalence of the fuel type available given their query.
+
+API integration
+Overall, I did not struggle implementing the API until it was time to make it work.
+Search queries entered by the user were given using city, state, zip or address, and the API only accepted latitude and longitute.
+So the challenge was to turn the users search location into respective lat and lon for the API to function.
+
+HCI Principles
+This app shows users st. error, warning and success messages which guide the user through each step and confirms the action they are performing.
+This is essential for HCI because people have the expectation that something needs to happen when a button is clicked or something is typed, or a button is checked or unchecked.
+Allowing users to navigate forward and backward through the app as well as navigate to the beginning allows users to have control within the app. 
+Streamlit provides consistency with their UI which aids in not confusing users and allowing users to clearly identify a button, a check or a space to enter text. 
+
+Conclusion:
+Given more time and perhaps more knowledge, I would improve the chart element I picked, I would sort out the bugginess when clicking a button and perhaps I would find a solution to not
+have users scroll all the way down their search results to click next. Upon reflection, if a user chooses to display 50 search results, they might be scrolling for a while.
+Overall I am satisfied with meeting the requirements of the assignment and learning about building useful web apps. 
